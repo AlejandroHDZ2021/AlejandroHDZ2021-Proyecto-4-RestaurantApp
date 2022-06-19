@@ -1,8 +1,11 @@
 import './App.css';
+
 import Menu from './components/Menu'
 import Formulario from './components/Formulario'
 import Image from 'react-bootstrap/Image'
 import FooterApp from './components/FooterApp'
+import 'bootstrap/dist/css/bootstrap.min.css'
+
 
 function App() {
   return (
