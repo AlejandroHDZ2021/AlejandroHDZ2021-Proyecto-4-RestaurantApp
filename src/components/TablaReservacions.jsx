@@ -43,7 +43,7 @@ const Form = () => {
           <Menu />
           <div>
 
-            <Table striped bordered hover variant="dark">
+            <Table responsive striped bordered hover variant="dark"  size="sm">
               <thead>
                 <tr>
                   <th>Nombre</th>
