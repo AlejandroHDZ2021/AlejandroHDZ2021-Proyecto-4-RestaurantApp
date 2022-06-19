@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import { collection,addDoc } from 'firebase/firestore'
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { db } from '../firebase'
@@ -57,7 +56,7 @@ const Formulario = () => {
               <Form.Label>Mensaje</Form.Label>
               <Form.Control type= "text" placeholder="Ingese su mensaje" name="mensaje" onChange={(e) => handleChange(e.target)}/>
             </Form.Group>
-            <Button onClick={() => handleClick()} variant="primary" type="submit">
+            <Button onClick={() => handleClick()} variant="primary">
               Enviar
             </Button>
           </Form>
