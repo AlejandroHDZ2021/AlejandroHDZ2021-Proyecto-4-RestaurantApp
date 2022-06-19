@@ -1,9 +1,8 @@
 import { initializeApp } from 'firebase/app'
 import { getFirestore } from 'firebase/firestore'
-import env from 'react-dotenv'
 
 const firebaseConfig = {
-  apiKey: env.APY_KEY_FIREBASE,
+  apiKey: "AIzaSyB_tQbSuJwEGnID7Q12z2-Db0RAFxCcSik",
   authDomain: "fb-restaurant-1ec78.firebaseapp.com",
   projectId: "fb-restaurant-1ec78",
   storageBucket: "fb-restaurant-1ec78.appspot.com",
