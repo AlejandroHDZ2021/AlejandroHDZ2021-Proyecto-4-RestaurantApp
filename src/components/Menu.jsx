@@ -1,12 +1,12 @@
 import { useState } from "react"
 import '../App.css';
-
-export default function Navbar() {
+const Menu =() => {
     const [isNavExpanded, setIsNavExpanded] = useState(false)
     return (
+      <header>
       <nav className="navigation">
         <a href="/" className="brand-name">
-          Restaurant React App
+        SuperSALADS
         </a>
         <button
         className="hamburger"
@@ -31,20 +31,22 @@ export default function Navbar() {
         <div
         className={
           isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
-        }
-      >
+        }>
           <ul>
-            <li>
-              <a href="/">Inicio</a>
-            </li>
-            <li>
-              <a href="/reservas">Reservaciones</a>
-            </li>
-            <li>
-              <a href="/contacto">Contacto</a>
-            </li>
-          </ul>
-        </div>
+          <li>
+            <a href="/">Inicio</a>
+          </li>
+          <li>
+            <a href="/reservas">Reservaciones</a>
+          </li>
+          <li>
+            <a href="/">Contacto</a>
+          </li>
+        </ul>
+      </div>
       </nav>
+      </header>
     );
   }
+
+  export default Menu
