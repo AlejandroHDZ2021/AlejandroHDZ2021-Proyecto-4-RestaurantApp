@@ -1,4 +1,6 @@
 import { useState } from "react"
+import { Link } from 'react-router-dom'
+
 import '../App.css';
 const Menu =() => {
     const [isNavExpanded, setIsNavExpanded] = useState(false)
@@ -37,7 +39,7 @@ const Menu =() => {
             <a href="/">Inicio</a>
           </li>
           <li>
-            <a href="/reservas">Reservaciones</a>
+            <a as={ Link } href="/reservas">Reservaciones</a>
           </li>
           <li>
             <a href="/">Contacto</a>
